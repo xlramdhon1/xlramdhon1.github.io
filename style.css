@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    background-color: #282b30;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Navbar*/
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+.brand-title {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+}
+
+.navbar-links li a:hover {
+    color: red;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: 1rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/*Navbar*/
+
+.center {
+    display: flex;
+    align-items: center;
+    line-height: 1rem;
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 5rem;
+}
+
+.short-info {
+    color: white;
+    display: block;
+    
+}
+
+.saya {
+    font-size: 20px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.name {
+    font-size: 5rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.desc {
+    font-size: 2rem;
+    font-family: 'Archivo', sans-serif;
+}
